@@ -1,6 +1,6 @@
 $if2(%albumartistsort%,%artistsort%)/
 $if($ne(%albumartistsort%,),
-%artist% - 
+$if2(%albumartistsort%,%artistsort%,%artist%) - 
 %date% - 
 %album%
 $if(%label%, {%label%)
