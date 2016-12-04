@@ -2,7 +2,10 @@ $if2(%albumartistsort%,%artistsort%)/
 $if($ne(%albumartistsort%,),
 %artist% - 
 %date% - 
-%album% {%label% %catalognumber%}  
+%album%
+$if(%label%, {%label%)
+$if(%label%,$if(%catalognumber%, %catalognumber%))
+$if(%label%,})  
 [
 $set(_numbr,$left(%_bitrate%,3))
 $upper(%_extension%)
