@@ -5,7 +5,7 @@ $if($ne(%albumartistsort%,),
 %album%
 $if(%label%, {%label%)
 $if(%label%,$if(%catalognumber%, %catalognumber%))
-$if(%label%,})  
+$if(%label%,}) 
 [
 $set(_numbr,$left(%_bitrate%,3))
 $upper(%_extension%)
